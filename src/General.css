@@ -1,0 +1,7 @@
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9c57f;
+    padding: 20px 0;
+}

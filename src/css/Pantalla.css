@@ -1,0 +1,33 @@
+.pantalla{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pantalla input{
+    width: 50%;
+    height: 15vh;
+    margin: 0;
+    border: 1px solid #fe4586;
+    border-radius: 10px;
+    padding: .5px 0;
+    text-align: end;
+    font-size: 40px;
+}
+
+.historial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.historial input{
+    border: none;
+    width: 50%;
+    text-align: end;
+    padding: 0.5px 0;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 30px;
+}

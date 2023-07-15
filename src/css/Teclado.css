@@ -1,0 +1,24 @@
+.teclado{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    align-self: center;
+    height: 60vh;
+}
+
+.sumar{
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+}
+
+.igual{
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+}
+
+
+.cero{
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+}
