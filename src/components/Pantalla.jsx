@@ -1,10 +1,14 @@
 import '../css/Pantalla.css'
 
-function Pantalla({pantalla,historial}) {
+function Pantalla({pantalla,historial,setPantalla,setResultado}) {
+  function clickHistorial() {
+    setResultado(false);
+    setPantalla(historial);
+  }
   return (
     <>
       <div className="historial">
-        <input type="text" value={historial} placeholder='Historial' name="" id="" />
+        <p onClick={() => clickHistorial()}>{historial ? historial : "Historial"}</p>
       </div>
       <div className='pantalla'>
           <input type="text" value={pantalla} placeholder="1 + 2" />
@@ -13,4 +17,4 @@ function Pantalla({pantalla,historial}) {
   )
 }
 
-export default Pantalla
+export {Pantalla}

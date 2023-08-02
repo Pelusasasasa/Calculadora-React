@@ -17,16 +17,19 @@
 
 .historial{
     display: flex;
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
 }
 
 
-.historial input{
+.historial p{
     border: none;
     width: 50%;
     text-align: end;
-    padding: 0.5px 0;
+    padding: 20px 0;
+    margin: 0;
+    background-color: lightgrey;
     border: 1px solid lightgray;
     border-radius: 10px;
     font-size: 30px;

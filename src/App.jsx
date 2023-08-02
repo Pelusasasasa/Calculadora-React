@@ -1,8 +1,7 @@
 
-import { useState } from 'react'
-import Pantalla from './components/Pantalla'
-import Teclado from './components/Teclado';
-// import { presionarTecla } from './js/funciones';
+import { useEffect, useState } from 'react'
+import {Pantalla} from './components/Pantalla'
+import {Teclado} from './components/Teclado';
 import './General.css';
 import { presionarTecla } from './js/funciones';
 
@@ -10,7 +9,7 @@ function App() {
   const [pantalla,setPantalla] = useState("");
   const [historial,setHistorial] = useState("");//Hace que quede un historial del resultado
   const [resultado,setResultado] = useState(false);//Hace que se reinicie la pantalla despues de hacer el igual
-  
+    
   function cambiarPantalla(text){
     if (text === "CE") {
       setPantalla("")
@@ -27,16 +26,13 @@ function App() {
       }
     }
     
-  }
+  };
 
-//   function presionarTecla(e) {
-//     console.log(e)
-//     setPantalla(e)
-// }
-document.addEventListener('keydown',(e) => presionarTecla(e.key,pantalla,setPantalla))
+
+
 return (
     <main>
-      <Pantalla pantalla={pantalla} historial={historial} />
+      <Pantalla pantalla={pantalla} setPantalla={setPantalla} setResultado={setResultado} historial={historial} />
       <Teclado onChange={cambiarPantalla} />
     </main>
   )

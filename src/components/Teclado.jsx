@@ -25,4 +25,4 @@ function Teclado({onChange}) {
   )
 }
 
-export default Teclado
+export {Teclado}
